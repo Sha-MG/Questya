@@ -10,7 +10,7 @@ import ThirdStep from '@/components/steps/third-step';
 import { Center, ChakraProvider, Container } from '@chakra-ui/react';
 
 export default function Home() {
-  const [currentStep, setCurrentStep] = useState(4);
+  const [currentStep, setCurrentStep] = useState(0);
 
   const handleNextStep = () => {
     setCurrentStep(currentStep + 1);
