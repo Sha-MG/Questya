@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { Box, Center, Stack } from '@chakra-ui/react';
 
 import CustomButton from '../common/custom_button';
+import CustomInput from '../common/custom_input';
 import Shelf from '../common/stepFour/shelf';
-import CustomInput from '../common/ThirdStep/custom_input';
 
 interface Step4Props {
   next: () => void;

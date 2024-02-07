@@ -20,16 +20,13 @@ export default function FirstStep({ next, previous }: FirstStepProps) {
         <Text as='span' textDecoration='underline'>
           L&apos;homme mystérieux :{' '}
         </Text>
-        &quot; À vous, cher recruteur intrépide, s&apos;ouvre le seuil
-        d&apos;une quête extraordinaire à la recherche de la candidate idéale.
-        Mais avant de vous aventurer dans cette quête, permettez-moi de vous
-        proposer mon aide. Par le passé, j&apos;ai arpenté le chemin que vous
-        empruntez aujourd&apos;hui. J&apos;ai connu une carrière brillante, où
-        tout semblait se dérouler à merveille. Tout, ou presque... Mon seul
-        regret réside dans le fait de ne pas avoir donné leur chance aux profils
-        atypiques, aux esprits novateurs, à ceux qui osent briser les
-        conventions. Ces personnes, pourtant capables d&apos;apporter une
-        richesse inestimable à une entreprise..&quot;
+        &quot; Cher recruteur intrépide, vous voici à l’orée d’une quête
+        difficile à la recherche de la candidate idéale. Permettez-moi de vous
+        proposer mon aide car par le passé, j&apos;ai moi aussi arpenté le
+        chemin des Recruteurs, j&apos;ai louvoyé dans la Mer des CV et me suis
+        parfois perdu dans la Jungle des profils. Heureusement j&apos;ai su
+        m&apos;entourer d&apos;esprits agiles, novateurs, aux profils parfois
+        atypiques qui ont fait la richesse de mon entreprise.&quot;
       </Box>
       <Box>
         Le vieux se tourne lentement vers vous, son regard semblant pénétrer
@@ -40,10 +37,10 @@ export default function FirstStep({ next, previous }: FirstStepProps) {
         <Text as='span' textDecoration='underline'>
           L&apos;homme mystérieux :{' '}
         </Text>
-        &quot; Je comprends la raison de votre présence. Vous aspirez à dénicher
-        une perle rare, une candidate qui saura non seulement vous étonner, mais
-        aussi vous inspirer. Et je peux vous aider dans votre quête, si vous
-        êtes prêt à sortir des sentiers battus. &quot;
+        &quot; Vous aspirez sûrement à dénicher La Perle Rare, la candidate qui
+        saura non seulement vous écouter, comprendre vos souhaits mais peut être
+        aussi vous étonner… Je peux vous aider dans votre quête, si vous êtes
+        prêt à sortir des sentiers battus. &quot;
       </Box>
       <Box>
         Vous êtes connu pour votre perspicacité et votre détermination. Votre
@@ -63,7 +60,7 @@ export default function FirstStep({ next, previous }: FirstStepProps) {
       <CustomButton action={next} text='Je suis prêt pour cette aventure.' />
       <CustomButton
         action={previous}
-        text="J'ai oublié quelque chose avant de partir. Les grandes découvertes peuvent attendre les petites urgences. Revenez-nous dès que vous serez prêt !"
+        text="J'ai oublié quelque chose avant de partir. Les grandes découvertes peuvent attendre les petites urgences. Revenez dès que vous serez prêt !"
       />
     </Stack>
   );

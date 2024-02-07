@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Box, Center, Stack } from '@chakra-ui/react';
 
 import CustomButton from '../custom_button';
-import CustomInput from './custom_input';
+import CustomInput from '../custom_input';
 
 interface AnswersProps {
   next: () => void;

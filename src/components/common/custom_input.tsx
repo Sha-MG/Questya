@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { CheckIcon } from '@chakra-ui/icons';
 import { Box, HStack, Input, Stack, Text } from '@chakra-ui/react';
 
-import CustomButton from '../custom_button';
+import CustomButton from './custom_button';
 
 interface CustomInputProps {
   placeholder: string;
@@ -27,16 +27,17 @@ export default function CustomInput({
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.target.value);
   };
-
   const handleValidate = () => {
-    if (answer.toLowerCase() === input.toLowerCase()) {
+    const formattedInput = input.trim();
+    const formattedAnswer = answer.trim();
+
+    if (formattedAnswer.toLowerCase() === formattedInput.toLowerCase()) {
       setIsValidate(true);
       onValidation();
     } else {
       setErrors(errors + 1);
     }
   };
-
   return (
     <>
       {isValidate ? (
@@ -65,6 +66,11 @@ export default function CustomInput({
             <CustomButton action={handleValidate} text='Valider' small />
           </HStack>
           <Box>
+            {errors > 0 && errors < 8 && (
+              <Text fontSize='sm' color='#B26969' mb={2}>
+                Vous avez fait {errors} erreur{errors > 1 && 's'}.
+              </Text>
+            )}
             {errors >= 8 ? (
               <Stack color='#B89880' fontSize='sm'>
                 <Text>La réponse est : </Text>
