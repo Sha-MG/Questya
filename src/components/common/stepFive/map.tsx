@@ -14,7 +14,7 @@ export default function Map() {
   return (
     <HStack position='relative'>
       <HStack position='relative'>
-        <Image ref={source} src='frame 2.jpg' alt='carte' />
+        <Image ref={source} src='map2.jpg' alt='carte' />
         <Box ref={cursor} position='absolute'>
           <Search2Icon width='80px' height='80px' color='#C1DBD6' />
         </Box>

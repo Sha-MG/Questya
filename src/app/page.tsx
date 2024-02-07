@@ -7,6 +7,7 @@ import FirstStep from '@/components/steps/first-step';
 import SecondStep from '@/components/steps/second-step';
 import Step4 from '@/components/steps/step-4';
 import Step5 from '@/components/steps/step-5';
+import Step6 from '@/components/steps/step-6';
 import ThirdStep from '@/components/steps/third-step';
 import { Center, ChakraProvider, Container } from '@chakra-ui/react';
 
@@ -41,8 +42,10 @@ export default function Home() {
             <ThirdStep next={handleNextStep} />
           ) : currentStep === 4 ? (
             <Step4 next={handleNextStep} />
-          ) : (
+          ) : currentStep === 5 ? (
             <Step5 next={handleNextStep} />
+          ) : (
+            <Step6 next={handleNextStep} />
           )}
         </Container>
       </Center>
