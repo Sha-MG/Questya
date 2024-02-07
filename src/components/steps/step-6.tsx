@@ -35,17 +35,17 @@ export default function Step5({ next }: Step6Props) {
       </Box>
       <Image src='domaine.jpg' alt='manoir' />
       <Box>
-        Dès les premiers pas à l'intérieur, une atmosphère chargée de sérénité
-        et d'envie enrobe vos sens. Chaque pièce semble être un monde à part
-        entière, imprégné d'une énergie créative unique.
+        Dès les premiers pas à l&apos;intérieur, une atmosphère chargée de
+        sérénité et d&apos;envie enrobe vos sens. Chaque pièce semble être un
+        monde à part entière, imprégné d&apos;une énergie créative unique.
       </Box>
       <Box>
         {' '}
         Au fond du hall principal, une porte imposante attire votre regard,
-        ornée de l'inscription : "Montagne du Destin". C'est là votre
-        destination ultime, le lieu où vous pourrez rencontrer votre candidate,
-        enfin ! Mais malgré ses efforts pour l'ouvrir, la porte reste
-        impassible, défiant ses attentes. Un pavé numérique capte votre
+        ornée de l&apos;inscription : &quot;Montagne du Destin&quot;. C&apos;est
+        là votre destination ultime, le lieu où vous pourrez rencontrer votre
+        candidate, enfin ! Mais malgré ses efforts pour l&apos;ouvrir, la porte
+        reste impassible, défiant ses attentes. Un pavé numérique capte votre
         attention, ses touches colorées semblant dissimuler un secret
         insaisissable...
       </Box>
@@ -53,8 +53,8 @@ export default function Step5({ next }: Step6Props) {
         {' '}
         Chaque pièce pourrait receler des indices cruciaux pour percer le
         mystère de cette porte verrouillée. Animé par la curiosité et la
-        détermination,vous vous lancez dans l'exploration de ce domaine hors du
-        commun.
+        détermination,vous vous lancez dans l&apos;exploration de ce domaine
+        hors du commun.
       </Box>
       <Center my={10}>
         <CustomButton action={onOpen} text='Explorer les pièces' />
