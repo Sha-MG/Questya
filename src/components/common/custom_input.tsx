@@ -38,6 +38,12 @@ export default function CustomInput({
       setErrors(errors + 1);
     }
   };
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleValidate();
+    }
+  };
+
   return (
     <>
       {isValidate ? (
@@ -62,6 +68,7 @@ export default function CustomInput({
               borderColor={errors >= 1 ? '#B26969' : '#D5C6BA'}
               value={input}
               onChange={handleChange}
+              onKeyDown={handleKeyDown}
             />
             <CustomButton action={handleValidate} text='Valider' small />
           </HStack>

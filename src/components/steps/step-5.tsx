@@ -1,7 +1,8 @@
 import { useState } from 'react';
 
-import { Box, Image, Stack, Text } from '@chakra-ui/react';
+import { Box, Center, Image, Stack, Text } from '@chakra-ui/react';
 
+import CustomButton from '../common/custom_button';
 import CustomInput from '../common/custom_input';
 import Map from '../common/stepFive/map';
 
@@ -96,10 +97,26 @@ export default function Step5({ next }: Step5Props) {
         onValidation={() => setValidate(true)}
       />
       {validate && (
-        <Box>
-          L&apos;homme vous adresse un sourire satisfait, et vous tend un
-          parchemin sur lequel est inscrit un message :
-        </Box>
+        <>
+          <Box>
+            L&apos;homme vous adresse un sourire satisfait, et vous tend un
+            parchemin sur lequel est inscrit un message :
+          </Box>
+          <Stack fontWeight='semibold' as='i'>
+            <Text>
+              &quot;Bravo, cher recruteur ! Vous n&apos;avez jamais été aussi
+              proche de votre but. Maintenant que vous avez exploré cette
+              bibliothèque, vous en savez d&apos;avantage sur les connaissances
+              de votre candidate. Votre prochaine destination vous attend : Le
+              Domaine des inspirations. C&apos;est votre dernière étape avant de
+              la rencontrer, tenez bon !
+            </Text>
+            <Text>Ps: Alfred va vous emmener jusqu&apos;au domaine.&quot;</Text>
+          </Stack>
+          <Center>
+            <CustomButton action={next} text='En avant Alfred' />
+          </Center>
+        </>
       )}
     </Stack>
   );
