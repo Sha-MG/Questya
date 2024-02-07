@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 import Entry from '@/components/steps/entry';
 import FirstStep from '@/components/steps/first-step';
+import LastStep from '@/components/steps/last-step';
 import SecondStep from '@/components/steps/second-step';
 import Step4 from '@/components/steps/step-4';
 import Step5 from '@/components/steps/step-5';
@@ -44,8 +45,10 @@ export default function Home() {
             <Step4 next={handleNextStep} />
           ) : currentStep === 5 ? (
             <Step5 next={handleNextStep} />
-          ) : (
+          ) : currentStep === 6 ? (
             <Step6 next={handleNextStep} />
+          ) : (
+            <LastStep />
           )}
         </Container>
       </Center>
