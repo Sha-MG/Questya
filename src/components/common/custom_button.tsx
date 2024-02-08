@@ -15,15 +15,22 @@ export default function CustomButton({
   return small ? (
     <Button
       size='sm'
+      fontSize='sm'
+      fontWeight='regular'
       bgColor='#D6BFBE'
       transition='all 0.2s'
-      _hover={{ bgColor: '#D6BFBE', filter: 'brightness(1.05)' }}
+      borderRadius={0}
+      letterSpacing='0.15rem'
+      _hover={{
+        bgColor: '#c2a7a6',
+        color: 'white',
+      }}
     >
       {text}
     </Button>
   ) : (
     <Box zIndex={2}>
-      <chakra.button className='button-52' onClick={action}>
+      <chakra.button className='button' onClick={action} fontSize='sm'>
         {text}
       </chakra.button>
     </Box>
