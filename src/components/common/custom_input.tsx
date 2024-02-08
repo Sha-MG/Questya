@@ -57,14 +57,16 @@ export default function CustomInput({
             <Input
               placeholder={placeholder}
               _placeholder={{ fontSize: 'sm' }}
-              border='2px solid'
+              border='none'
+              borderBottom='2px solid'
               _focus={{
                 borderColor: '#B89880',
                 outlineColor: 'none',
                 boxShadow: 'none',
               }}
               _hover={{ borderColor: '#D3AC7C' }}
-              bgColor={'#DCDBD5'}
+              bgColor='#E1DAD9'
+              filter='brightness(0.95)'
               borderColor={errors >= 1 ? '#B26969' : '#D5C6BA'}
               value={input}
               onChange={handleChange}
@@ -72,18 +74,18 @@ export default function CustomInput({
             />
             <CustomButton action={handleValidate} text='Valider' small />
           </HStack>
-          <Box>
-            {errors > 0 && errors < 8 && (
+          <Box fontFamily='Diphylleia'>
+            {errors > 0 && errors < 6 && (
               <Text fontSize='sm' color='#B26969' mb={2}>
                 Vous avez fait {errors} erreur{errors > 1 && 's'}.
               </Text>
             )}
-            {errors >= 8 ? (
+            {errors >= 6 ? (
               <Stack color='#B89880' fontSize='sm'>
                 <Text>La réponse est : </Text>
                 <Text>{answer}</Text>
               </Stack>
-            ) : errors >= 5 ? (
+            ) : errors >= 4 ? (
               <Stack color='#B89880' fontSize='sm'>
                 <Text> Voici un dernier indice pour vous aider : </Text>
                 <Stack>

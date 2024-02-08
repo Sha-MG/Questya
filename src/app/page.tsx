@@ -10,7 +10,20 @@ import Step4 from '@/components/steps/step-4';
 import Step5 from '@/components/steps/step-5';
 import Step6 from '@/components/steps/step-6';
 import ThirdStep from '@/components/steps/third-step';
-import { Center, ChakraProvider, Container } from '@chakra-ui/react';
+import theme from '@/theme';
+import {
+  Box,
+  Center,
+  ChakraProvider,
+  Circle,
+  Container,
+  Image,
+  Step,
+  StepIcon,
+  StepIndicator,
+  Stepper,
+  StepStatus,
+} from '@chakra-ui/react';
 
 export default function Home() {
   const [currentStep, setCurrentStep] = useState(0);
@@ -29,10 +42,54 @@ export default function Home() {
       behavior: 'smooth',
     });
   };
+
+  const steps = [
+    { title: 'Second', description: 'Départ' },
+    { title: 'Third', description: 'Première étape' },
+    { title: 'Third', description: 'Première étape' },
+    { title: 'Third', description: 'Première étape' },
+    { title: 'Third', description: 'Première étape' },
+    { title: 'Third', description: 'Première étape' },
+  ];
+
   return (
-    <ChakraProvider>
-      <Center w='full' minH='100vh' bgColor='#D5C6BA'>
-        <Container maxW='2xl' py={10} bg='#E9E6DD' px={6}>
+    <ChakraProvider theme={theme}>
+      <Center w='full' minH='100vh' bgColor='#D6BFBE'>
+        <Container maxW='xl' py={10} bg='#E1DAD9' px={6} pt={0}>
+          <Center>
+            <Image src='/Questya.png' alt='logo' w='200px' />
+          </Center>
+          {currentStep > 0 && currentStep < 7 && (
+            <Stepper index={currentStep - 1} mb={10} size='sm'>
+              {steps.map((step, index) => (
+                <Step key={index}>
+                  <StepIndicator border='none' bgColor='#E1DAD9'>
+                    <StepStatus
+                      complete={
+                        <Circle bgColor='#D99D5A' size={6}>
+                          <StepIcon />
+                        </Circle>
+                      }
+                      active={
+                        <Circle
+                          bgColor='#E1DAD9'
+                          border='3px solid'
+                          borderColor='#D99D5A'
+                          size={6}
+                        />
+                      }
+                      incomplete={<Circle bgColor='#D6BFBE' size={6} />}
+                    />
+                  </StepIndicator>
+                  <Box
+                    w='full'
+                    h='2px'
+                    bgColor={index < currentStep ? '#D99D5A' : '#D6BFBE'}
+                  />
+                </Step>
+              ))}
+            </Stepper>
+          )}
           {currentStep === 0 ? (
             <Entry next={handleNextStep} />
           ) : currentStep === 1 ? (

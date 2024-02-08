@@ -16,63 +16,42 @@ export default function Step5({ next }: Step5Props) {
   return (
     <Stack textAlign='justify' spacing={4}>
       <Box>
-        Vous poussez doucement la lourde porte de la bibliothèque. À peine
-        franchi le seuil, vous êtes accueilli par un monde de savoir, où chaque
-        étagère regorge de livres anciens et de parchemins jaunis par le temps.
+        Bien sûr, vous entrez dans une somptueuse bibliothèque… Le sol est pavé
+        de couleurs vives, formant un patchwork multicolore sous vos pieds, vos
+        doigts effleurent les reliures d’ouvrages anciens, votre nez frémit au
+        parfum un peu poivré du papier, vous écarquillez les yeux dans la salle
+        des sciences naturelles peuplées de curieux spécimens figés dans le
+        temps, Un étrange sentiment de « déjà vu » s’empare de vous dans
+        certaines salles, sans que vous parveniez à comprendre ce qui vous est
+        si familier….
       </Box>
       <Image src='bibli.jpg' alt='bibliotheque' />
       <Box>
-        Vous vous avancez avec émerveillement, laissant vos doigts effleurer les
-        reliures des ouvrages, sentant le poids du savoir qui imprègne chaque
-        centimètre de cet endroit. Le sol est pavé de dalles aux couleurs vives,
-        formant un patchwork multicolore sous vos pieds.
+        Une carte (encore ! La demoiselle exagère…) semble vous attendre là.
+        Elle représente, vous le comprenez vite, les pièces que vous venez de
+        traverser. Vous tendez la main pour la saisir lorsque qu’une voix vous
+        interpelle :
       </Box>
-      <Box>
-        Vous explorez les différentes sections, découvrant des salles dédiées à
-        chaque domaine. La salle de la littérature exhale le parfum enivrant des
-        vieux livres, tandis que la salle des sciences naturelles est peuplée de
-        spécimens curieux figées dans le temps.
-      </Box>
-      <Box>
-        Une aile singulière attire particulièrement votre attention. Les salles
-        que vous traversez vous semblent étrangement familières, bien que vous
-        ne puissiez mettre le doigt sur leur origine. Alors que vous arpentez
-        ces couloirs, vos pas vous conduisent finalement vers une salle
-        intrigante. Au centre de celle-ci trône un piédestal majestueux, sur
-        lequel repose une carte détaillant le plan de cette aile.{' '}
-      </Box>
-      <Box>
-        Vous vous apprêtez à la saisir, lorsque vous percevez un léger bruit
-        derrière vous. Vous sursautez vivement, réalisant qu&apos;un homme se
-        tient à présent à quelques pas de vous.
-      </Box>
-
-      <Box fontWeight='medium' color='#807F79'>
-        <Text as='span' textDecoration='underline'>
-          L&apos;homme :{' '}
-        </Text>
+      <Box fontWeight='medium' color='#826651' fontFamily='diphylleia' my={4}>
         &quot;Je crains que cette carte ne doive rester à sa place, mon
         ami&quot;
       </Box>
       <Box>
-        Intrigué, vous lui demandez où trouver cette &quot;perle rare&quot; qui
-        alimente votre quête. Il vous regarde alors, un sourire malicieux
-        étirant ses lèvres, et répond d&apos;un ton énigmatique :
+        Vous vous tournez, surpris, vers un homme d&apos;âge mur dont la tenu
+        vous fait dire qu&apos;il doit être majordome ici. Un peu impatient
+        maintenant de découvrir la candidate, vous lui expliquez la partie de
+        cache-cache dans laquelle vous êtes lancé. Saurait-il dans quelle pièce
+        trouver la candidate ? Un sourire malicieux aux lèvres, il vous répond
+        d&apos;un ton énigmatique :
       </Box>
-      <Box fontWeight='medium' color='#807F79'>
-        <Text as='span' textDecoration='underline'>
-          L&apos;homme :{' '}
-        </Text>
-        &quot; Eh bien, vous voyez... mes souvenirs sont parfois fugaces. Si
-        vous retrouviez le nom de la pièce qui renferme la réponse à votre
-        question, je pourrais probablement vous aider. Voilà ce dont je me
-        rappelle :
+      <Box fontWeight='medium' color='#826651' fontFamily='diphylleia'>
+        &quot; Eh bien, vous voyez... Mes souvenirs sont parfois fugaces. Si
+        vous retrouviez la technologie associée à la pièce que vous cherchez, je
+        pourrais probablement vous aider. Voilà ce dont je me rappelle :
         <Box my={4}>
           <Text>- La salle n&apos;est pas trop éclairée.</Text>
           <Text>- Le JavaScript est un langage propice aux interactions.</Text>
-          <Text>
-            - La salle n&apos;a pas pour sujet des choses très esthétiques.
-          </Text>
+          <Text>- La salle n&apos;a pas pour sujet des choses graphiques.</Text>
           <Text>
             - Elle contient des informations sur une technologie statique.
           </Text>
@@ -102,14 +81,14 @@ export default function Step5({ next }: Step5Props) {
             L&apos;homme vous adresse un sourire satisfait, et vous tend un
             parchemin sur lequel est inscrit un message :
           </Box>
-          <Stack fontWeight='semibold' as='i'>
+          <Stack as='i' color='#826651' fontFamily='diphylleia'>
             <Text>
               &quot;Bravo, cher recruteur ! Vous n&apos;avez jamais été aussi
               proche de votre but. Maintenant que vous avez exploré cette
               bibliothèque, vous en savez d&apos;avantage sur les connaissances
               de votre candidate. Votre prochaine destination vous attend : Le
-              Domaine des inspirations. C&apos;est votre dernière étape avant de
-              la rencontrer, tenez bon !
+              Domaine des inspirations. Une dernière étape vous attend
+              maintenant : Le Domaine des inspirations.
             </Text>
             <Text>Ps: Alfred va vous emmener jusqu&apos;au domaine.&quot;</Text>
           </Stack>

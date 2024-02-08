@@ -28,48 +28,40 @@ export default function SecondStep({ next, previous }: SecondStepProps) {
     <Stack spacing={4} textAlign='justify'>
       <Box>
         Vous vous retrouvez face à une carte étrange, ornée de symboles et de
-        dessins mystérieux. Dessus, vous pouvez distinguer que des notes ont été
-        prises sur cinq lieux, mais vous ne parvenez pas à lire ce qui est
-        écrit.
+        dessins mystérieux.
       </Box>
-      <Stack fontWeight='medium' color='#807F79'>
+      <Stack fontWeight='medium' color='#826651' fontFamily='diphylleia' my={4}>
         <Box>
-          <Text as='span' textDecoration='underline'>
-            L&apos;homme mystérieux :{' '}
-          </Text>
-          &quot; Vous allez devoir vous rendre dans chacun de ces lieux afin de
-          vous rapprocher de votre candidate. Ma plume est plus tortueuse que
-          les chemins de l&apos;esprit, mais ma parole aussi fidèle que la
-          boussole d&apos;un pirate, voici donc les lieux que vous devrez
-          trouver :
+          &quot; Ma plume est plus tortueuse que les chemins de l&apos;esprit,
+          mais ma parole aussi fidèle que la boussole d&apos;un pirate, voici
+          donc les lieux que vous devrez trouver :
         </Box>
         <Box>
           <Text as='span' fontWeight='semibold'>
             Le Jardin des Talents :
           </Text>{' '}
-          Un paradis verdoyant où les qualités des candidats fleurissent comme
-          des pétales de printemps.
+          Un paradis verdoyant où s&apos;épanouissent ses qualités.
         </Box>
         <Box>
           <Text as='span' fontWeight='semibold'>
             La Chapelle des Expériences :
           </Text>{' '}
-          Un lieu empreint de sagesse et de découvertes, où les expériences
-          passées guident le chemin vers l&apos;avenir.
+          Un lieu empreint de sagesse et de découvertes, où ses expériences
+          passées guident son chemin vers l&apos;avenir.
         </Box>
         <Box>
           <Text as='span' fontWeight='semibold'>
             Les Salles de la Connaissance :{' '}
           </Text>{' '}
           Un ensemble de salles éclairées de la lueur du savoir, où chaque pièce
-          renferme un domaine de compétence à explorer.
+          renferme un domaine de compétence.
         </Box>
         <Box>
           <Text as='span' fontWeight='semibold'>
             Le Domaine des Inspirations :{' '}
           </Text>{' '}
-          Un royaume enchanté qui incarne les passions les plus profondes et qui
-          éveillerai n&apos;importe quel esprit créatif.
+          Un royaume enchanté où règne sa créativité et ses passions les plus
+          vives.
         </Box>
         <Box>
           <Text as='span' fontWeight='semibold'>
@@ -86,16 +78,16 @@ export default function SecondStep({ next, previous }: SecondStepProps) {
           &quot;
         </Box>
       </Stack>
-      <Box
-        w='full'
-        h='300px'
-        bgImage='url(map.jpg)'
-        backgroundPosition='center'
-        backgroundSize='cover'
-        transition='all 0.3s'
-        _hover={{ cursor: 'pointer', boxShadow: '0 0 10px 5px #D5C6BA' }}
-        onClick={onOpen}
-      />
+      <Center>
+        <Image
+          w='400px'
+          src='map.jpg'
+          alt="carte de l'aventure"
+          transition='all 0.3s'
+          _hover={{ cursor: 'pointer', boxShadow: '0 0 10px 5px #D5C6BA' }}
+          onClick={onOpen}
+        />
+      </Center>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent minW='60vw'>
@@ -108,12 +100,11 @@ export default function SecondStep({ next, previous }: SecondStepProps) {
           </ModalBody>
         </ModalContent>
       </Modal>
-      <Box>
-        Au moment où vous quittez du regard la carte, l&apos;homme semble fondre
-        dans l&apos;ombre, laissant derrière lui une aura de mystère. Déterminé
-        à poursuivre votre quête, vous vous mettez en route vers le Jardin des
-        Talents, le premier lieu marqué sur la carte. Marchant d&apos;un pas
-        décidé, vous êtes prêt à découvrir ce que ce lieu vous réserve.
+      <Box mt={4}>
+        Vous relevez les yeux et cherchez l’homme du regard mais… il s’évanouit
+        dans l’ombre laissant derrière lui une aura de mystère. Déterminé à
+        poursuivre votre quête, vous avancez d’un pas décidé vers le Jardin des
+        Talents, première étape de ce surprenant voyage.
       </Box>
       <Stack direction='row' spacing={4}>
         <Center w='full'>

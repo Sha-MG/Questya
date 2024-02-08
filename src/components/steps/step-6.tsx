@@ -30,8 +30,8 @@ export default function Step5({ next }: Step6Props) {
   return (
     <Stack textAlign='justify'>
       <Box>
-        Alfred vous dépose avec solennité devant un immense manoir : Le Domaine
-        des Inspirations.
+        Alfred vous dépose prestement devant un immense manoir et annonce : « Le
+        Domaine des Inspirations »
       </Box>
       <Image src='domaine.jpg' alt='manoir' />
       <Box>
@@ -74,7 +74,9 @@ export default function Step5({ next }: Step6Props) {
             <DrawerOverlay />
             <DrawerContent bgColor='#E8E6DD'>
               <DrawerCloseButton />
-              <DrawerHeader>Le Domaine des Inspirations</DrawerHeader>
+              <DrawerHeader fontFamily='Diphylleia'>
+                Le Domaine des Inspirations
+              </DrawerHeader>
               <DrawerBody>
                 <Stack>
                   <Box>
@@ -89,8 +91,8 @@ export default function Step5({ next }: Step6Props) {
                       l&apos;image en grand.
                     </Text>
                     <Text>
-                      - Vous devez cliquer-glisser chaque miniature à la
-                      description de la passion qui lui correspond.
+                      - Vous devez cliquer-glisser chaque miniature sur la case
+                      dont la description d&apos;une passion correspond.
                     </Text>
                   </Box>
                   <DroppableZone />

@@ -1,4 +1,4 @@
-import { Box, Stack, Text } from '@chakra-ui/react';
+import { Box, Stack } from '@chakra-ui/react';
 
 import CustomButton from '../common/custom_button';
 
@@ -11,15 +11,12 @@ export default function FirstStep({ next, previous }: FirstStepProps) {
   return (
     <Stack spacing={4}>
       <Box>
-        Dans une ruelle sombre et étroite, à l&apos;angle d&apos;une vieille
-        bâtisse, se tient une silhouette encapuchonnée. Son visage est caché
-        dans l&apos;ombre, mais ses yeux brillent d&apos;une lueur mystérieuse
-        alors qu&apos;il attend patiemment.
+        Dans une ruelle, à l&apos;angle d&apos;une vieille bâtisse, se tient une
+        silhouette encapuchonnée. Son visage est caché dans l&apos;ombre, mais
+        ses yeux brillent d&apos;une lueur mystérieuse alors qu&apos;il attend
+        patiemment.
       </Box>
-      <Box fontWeight='medium' color='#807F79'>
-        <Text as='span' textDecoration='underline'>
-          L&apos;homme mystérieux :{' '}
-        </Text>
+      <Box fontWeight='medium' color='#826651' fontFamily='diphylleia' my={4}>
         &quot; Cher recruteur intrépide, vous voici à l’orée d’une quête
         difficile à la recherche de la candidate idéale. Permettez-moi de vous
         proposer mon aide car par le passé, j&apos;ai moi aussi arpenté le
@@ -33,13 +30,10 @@ export default function FirstStep({ next, previous }: FirstStepProps) {
         votre âme. Dans sa main ridée, il tient une carte jaunie par le temps,
         ornée de symboles énigmatiques et de runes anciennes.
       </Box>
-      <Box fontWeight='medium' color='#807F79'>
-        <Text as='span' textDecoration='underline'>
-          L&apos;homme mystérieux :{' '}
-        </Text>
+      <Box fontWeight='medium' color='#826651' fontFamily='diphylleia' my={4}>
         &quot; Vous aspirez sûrement à dénicher La Perle Rare, la candidate qui
         saura non seulement vous écouter, comprendre vos souhaits mais peut être
-        aussi vous étonner… Je peux vous aider dans votre quête, si vous êtes
+        aussi vous étonner... Je peux vous aider dans votre quête, si vous êtes
         prêt à sortir des sentiers battus. &quot;
       </Box>
       <Box>

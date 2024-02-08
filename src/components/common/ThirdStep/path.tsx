@@ -16,10 +16,9 @@ interface PathProps {
   url: string;
   border: boolean;
   description: string | JSX.Element;
-  title: string;
 }
 
-export default function Path({ url, border, description, title }: PathProps) {
+export default function Path({ url, border, description }: PathProps) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
@@ -28,21 +27,23 @@ export default function Path({ url, border, description, title }: PathProps) {
         flex={1}
         bg={`url(${url})`}
         bgPosition='center'
-        borderRight={border ? '1px solid white' : 'none'}
+        borderRight={border ? '5px solid' : 'none'}
+        borderColor='#E1DAD9'
         bgSize='cover'
         transition='all 0.3s'
-        filter={'brightness(0.8)'}
         _hover={{
           flex: 1.5,
           cursor: 'pointer',
           filter: 'brightness(1)',
+          boxShadow: '0 0 10px 5px white',
+          zIndex: 4,
         }}
         onClick={onOpen}
       />
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent minW='60vw'>
-          <ModalHeader bgColor='#E8E6DD'>{title}</ModalHeader>
+          <ModalHeader bgColor='#E8E6DD' />
           <ModalCloseButton />
           <ModalBody bgColor='#E8E6DD'>
             <Stack>

@@ -16,11 +16,9 @@ export default function Step4({ next }: Step4Props) {
   return (
     <Stack textAlign='justify' spacing={4}>
       <Box>
-        Dans l&apos;antre sacrée de la chapelle, vous êtes accueilli par la
-        lumière tamisée des bougies, dont les flammes vacillantes projettent des
-        éclats de chaleur sur les murs de pierre. Les vitraux colorés laissent
-        filtrer des lueurs chatoyantes qui dansent sur le sol poli, créant une
-        ambiance envoûtante.
+        Le cœur battant d&apos;anticipation, vous vous glissez dans une vaste
+        pièce habitée par la lueur chaude de dizaines de bougies. Le soleil fait
+        exploser au sol les couleurs des vitraux, l’atmosphère est envoûtante.
       </Box>
       <Box
         w='full'
@@ -33,38 +31,29 @@ export default function Step4({ next }: Step4Props) {
       <Box>
         Vous vous enfoncez un peu plus dans cette chapelle, laissant la lumière
         tamisée des bougies guider vos pas à travers les ténèbres. Au cœur de
-        celle-ci, une pièce majestueuse se dresse, révélant une imposante
-        étagère en bois sculpté, surplombée d&apos;une myriade de trophées
-        étincelants.
+        celle-ci, une pièce majestueuse se dresse.
       </Box>
       <Box>
-        Chaque récompense semble renfermer une histoire unique de succès et
-        d&apos;accomplissement, témoignant des exploits passés de ceux qui les
-        ont mérités. Un frisson d&apos;excitation parcourt votre échine alors
-        que vous vous approchez de cet impressionnant présentoir. Une fois
-        suffisamment près pour distinguer clairement ces objets, le sol craque
-        sous votre poids et vous sentez la dalle sur laquelle votre pied se pose
-        s&apos;enfoncer légèrement. Un léger grincement retentit dans la pièce,
-        annonçant l&apos;apparition d&apos;une porte devant vous. Une
-        inscription gravée juste au-dessus de la poignée vous défie de fournir
-        un mot, et ainsi percer les mystères de cette chapelle oubliée.
+        Une imposante étagère vous attire ; elle abrite une myriade de trophées
+        étincelants. Chaque objet, infiniment précieux, témoigne des luttes, des
+        explorations, des succès et réussites de votre candidate. Impatient d’en
+        apprendre plus, vous vous saisissez tout à tour de chacun des objets et
+        découvrez peu à peu des pans de son histoire ainsi que… des lettres,
+        gravées ça ou là…
       </Box>
       <Shelf />
       <Box>
         <Box my={10}>
-          Alors que vous contemplez les objets mystérieux qui ornent cette
-          étagère, un sentiment d&apos;urgence vous envahit. Vous réalisez que
-          pour continuer votre quête, vous devez percer le mystère qui entoure
-          cette porte. Chacun des artefacts semble contenir une partie du
-          parcours de cette fameuse candidate, une facette de son histoire. Avec
-          détermination, vous vous tournez vers la porte, prêt à saisir le
-          mot-clé qui déverrouillera le chemin vers cette perle rare.
+          Allons bon… Quel mot trouverez-vous en les assemblant ? Et… que faire
+          de ce mot ? S’il précise encore la personnalité de cette joyeuse
+          candidate, le mot dévoilé va aussi vous faire accéder à un autre de
+          ses univers. Vite, saisissez le dans la fenêtre qui vient
+          d’apparaître !
         </Box>
         {validate ? (
           <Box>
-            La porte s&apos;ouvre ! Après avoir trouvé le mot de passe et ouvert
-            la porte, vous découvrez un nouveau passage qui vous mène vers un
-            horizon prometteur : les Salles de la Connaissance.
+            Oui ! Encore une victoire. Vous voici donc en chemin vers un horizon
+            prometteur : les Salles de la Connaissance.
             <Center my={10}>
               <CustomButton action={next} text="S'élancer vers la suite" />
             </Center>

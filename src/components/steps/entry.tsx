@@ -1,4 +1,6 @@
-import { Box, Button, Center, Stack } from '@chakra-ui/react';
+import { Box, Center, Stack } from '@chakra-ui/react';
+
+import CustomButton from '../common/custom_button';
 
 interface EntryProps {
   next: () => void;
@@ -13,28 +15,24 @@ export default function Entry({ next }: EntryProps) {
         une quête que j&apos;espère unique !
       </Box>
       <Box>
-        À celui qui élucidera les énigmes, chaque étape dévoilera le parcours et
-        la personnalité de cette mystérieuse personne.
-      </Box>
-      <Box>
-        La chose que vous devez savoir c&apos;est qu&apos;à chaque fois que
-        l&apos;on vous demandera la solution d&apos;une énigme, au bout de 2
-        essais vous aurez un indice, au bout de 5 essais vous en aurez un
-        second, et au bout de 8 la réponse vous sera donnée.
+        À chaque étape du parcours celui qui aura su déchiffrer les énigmes
+        découvrira un pan de l’expérience, des connaissances ou de la
+        personnalité de la facétieuse candidate qui vous accueille dans son
+        univers.
       </Box>
       <Box>
         Préparez-vous à plonger dans un monde où chaque détail a son importance.
         Êtes-vous prêt à relever le défi ?
       </Box>
-      <Center>
-        <Button
-          bgColor='#CEC2B3'
-          _hover={{ bgColor: '#D5C6BA' }}
-          onClick={next}
-        >
-          C&apos;est parti !
-        </Button>
+      <Center my={10}>
+        <CustomButton action={next} text="C'est parti !" />
       </Center>
+      <Box as='i' fontSize='sm'>
+        À savoir : Chaque fois que l&apos;on vous demandera la solution
+        d&apos;une énigme, au bout de 2 essais vous aurez un indice, au bout de
+        4 essais vous en aurez un second, et au bout de 6 la réponse vous sera
+        donnée.
+      </Box>
     </Stack>
   );
 }

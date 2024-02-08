@@ -6,9 +6,8 @@ export default function LastStep() {
     <Stack spacing={2} textAlign='justify'>
       <Text fontWeight='bold'>Félicitations, vous y êtes.</Text>
       <Text>
-        Vous vous avancez sur le sommet de la montagne (non sans vous dire que
-        des grosses bêtes ailées auraient raccourcis le voyage), et vous
-        apercevez un coffre en bois.
+        Vous vous avancez sur le sommet de la montagne, et vous apercevez un
+        coffre en bois.
       </Text>
       <Text>
         Vous l&apos;ouvrez et y trouvez un parchemin précieusement conservé sur
@@ -35,8 +34,8 @@ export default function LastStep() {
       <Box my={4}>
         Ce sont celles, je l&apos;espère, de votre tant attendue perle rare.
         Créative, curieuse, polyvalente et optimiste, elle n&apos;attend que
-        votre appel.Au fil de cette aventure, vous avez eu l&apos;opportunité de
-        découvrir un aperçu de sa vie et de sa personnalité. J&apos;espère
+        votre appel. Au fil de cette aventure, vous avez eu l&apos;opportunité
+        de découvrir un aperçu de sa vie et de sa personnalité. J&apos;espère
         sincèrement que cette immersion vous donnera l&apos;envie de poursuivre
         l&apos;exploration.
       </Box>

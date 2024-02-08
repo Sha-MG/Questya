@@ -11,10 +11,10 @@ export default function Shelf() {
         Voici l&apos;étagère :
       </Box>
       <Box bgImage="url('planches.jpg')" bgPosition='center' bgSize='contain'>
-        <Flex bg='rgba(0,0,0, 0.3)'>
+        <Flex bg='rgba(152, 137, 135, 0.9)'>
           <ShelfVerticalSeparator />
           <Box flex={1}>
-            <Box h='10px' bg='#E8E6DD' />
+            <Box h='10px' bg='#E1DAD9' />
             <ShelfBox
               url='sphère.png'
               description="Posée avec une perfection presque surnaturelle, la sphère évoque une origine venue d'un autre monde, peut-être forgée par une technologie secrète. Son apparence envoûtante suscite des questions : aurait-elle été façonnée par des mains habiles maîtrisant les arcanes de la dimension 3D ? Cette candidate détient-elle les clés pour manipuler les frontières de la réalité ?"
@@ -33,11 +33,11 @@ export default function Shelf() {
               title='Une loupe'
             />
             <ShelfHorizontalSeparator />
-            <Box h='42px' bg='#E8E6DD' />
+            <Box h='42px' bg='#E1DAD9' />
           </Box>
           <ShelfVerticalSeparator />
           <Box flex={1}>
-            <Box h='10px' bg='#E8E6DD' />
+            <Box h='10px' bg='#E1DAD9' />
             <ShelfBox
               url='tablette.png'
               description="Une tablette élégante, vibrant d'une énergie créative palpable. Ses courbes fluides et son écran lumineux évoquent un outil de conception moderne, prêt à donner vie aux idées les plus audacieuses. Aurait-elle été le compagnon fidèle d'un artiste visionnaire, explorant les vastes horizons de la conception graphique ? On peux encore apercevoir certains raccourcis, PS, Ai, F..."
@@ -56,11 +56,11 @@ export default function Shelf() {
               title='Une maison'
             />
             <ShelfHorizontalSeparator />
-            <Box h='42px' bg='#E8E6DD' />
+            <Box h='42px' bg='#E1DAD9' />
           </Box>
           <ShelfVerticalSeparator />
           <Box flex={1}>
-            <Box h='10px' bg='#E8E6DD' />
+            <Box h='10px' bg='#E1DAD9' />
             <ShelfBox
               url='trophée.png'
               description="Un trophée en forme de cœur trône fièrement parmi les autres objets, évoquant une expérience enrichissante et altruiste. Son éclat et sa forme singulière semblent raconter une histoire de générosité et d'engagement envers la communauté. Il semble témoigner des précieux moments passés à contribuer a un projet humanitaire."
@@ -79,7 +79,7 @@ export default function Shelf() {
               title='Un pot'
             />
             <ShelfHorizontalSeparator />
-            <Box h='42px' bg='#E8E6DD' />
+            <Box h='42px' bg='#E1DAD9' />
           </Box>
           <ShelfVerticalSeparator />
         </Flex>

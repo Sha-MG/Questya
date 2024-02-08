@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Candidotron',
+  title: 'Questya',
   description: 'Site créé par Morgane Gamory.',
 };
 

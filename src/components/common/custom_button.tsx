@@ -12,11 +12,14 @@ export default function CustomButton({
 }: CustomButtonProps) {
   return (
     <Box
-      bgColor='#CEC2B3'
-      fontWeight={small ? 'regular' : 'semibold'}
+      fontFamily={`"diphylleia", cursive`}
+      bgColor='#988A88'
+      color='#E1DAD9'
+      fontWeight='semibold'
       textAlign='center'
       p={2}
-      _hover={{ bgColor: '#D5C6BA', cursor: 'pointer' }}
+      transition='all 0.1s'
+      _hover={{ cursor: 'pointer', opacity: 0.7 }}
       onClick={action}
       {...(small && { fontSize: 'sm' })}
     >
