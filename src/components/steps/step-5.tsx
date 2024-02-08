@@ -87,8 +87,7 @@ export default function Step5({ next }: Step5Props) {
               proche de votre but. Maintenant que vous avez exploré cette
               bibliothèque, vous en savez d&apos;avantage sur les connaissances
               de votre candidate. Votre prochaine destination vous attend : Le
-              Domaine des inspirations. Une dernière étape vous attend
-              maintenant : Le Domaine des inspirations.
+              Domaine des inspirations.
             </Text>
             <Text>Ps: Alfred va vous emmener jusqu&apos;au domaine.&quot;</Text>
           </Stack>
