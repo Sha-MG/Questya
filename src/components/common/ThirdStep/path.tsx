@@ -1,5 +1,4 @@
 import {
-  AspectRatio,
   Box,
   Image,
   Modal,
@@ -32,7 +31,7 @@ export default function Path({ url, border, description }: PathProps) {
         bgSize='cover'
         transition='all 0.3s'
         _hover={{
-          flex: 1.5,
+          flex: 3,
           cursor: 'pointer',
           filter: 'brightness(1)',
           boxShadow: '0 0 10px 5px white',
@@ -47,9 +46,7 @@ export default function Path({ url, border, description }: PathProps) {
           <ModalCloseButton />
           <ModalBody bgColor='#E8E6DD'>
             <Stack>
-              <AspectRatio ratio={1 / 1} minW='50vw'>
-                <Image src={url} alt={url} />
-              </AspectRatio>
+              <Image src={url} alt={url} />
               <Box>{description}</Box>
             </Stack>
           </ModalBody>

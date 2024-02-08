@@ -23,7 +23,7 @@ export default function Step4({ next }: Step4Props) {
       <Box
         w='full'
         my={10}
-        bgImage={'url(interieur_chapelle.jpg)'}
+        bgImage='https://i.imgur.com/V19ViQH.jpeg'
         h='350px'
         bgPosition='center'
         bgSize='cover'

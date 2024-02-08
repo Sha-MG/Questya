@@ -33,7 +33,7 @@ export default function Step5({ next }: Step6Props) {
         Alfred vous dépose prestement devant un immense manoir et annonce : « Le
         Domaine des Inspirations »
       </Box>
-      <Image src='domaine.jpg' alt='manoir' />
+      <Image src='https://i.imgur.com/jWu4HA9.jpeg' alt='manoir' />
       <Box>
         Dès les premiers pas à l&apos;intérieur, une atmosphère chargée de
         sérénité et d&apos;envie enrobe vos sens. Chaque pièce semble être un

@@ -25,7 +25,7 @@ export default function Step5({ next }: Step5Props) {
         certaines salles, sans que vous parveniez à comprendre ce qui vous est
         si familier….
       </Box>
-      <Image src='bibli.jpg' alt='bibliotheque' />
+      <Image src='https://i.imgur.com/eRXWESU.jpeg' alt='bibliotheque' />
       <Box>
         Une carte (encore ! La demoiselle exagère…) semble vous attendre là.
         Elle représente, vous le comprenez vite, les pièces que vous venez de

@@ -13,12 +13,12 @@ export default function DroppableZone() {
   );
 
   const images = [
-    { url: 'passions/piece1.jpg', alt: '1', color: '#D52F36' },
-    { url: 'passions/piece2.jpg', alt: '2', color: '#9CBDE0' },
-    { url: 'passions/piece3.jpg', alt: '3', color: '#BBC99A' },
-    { url: 'passions/piece4.jpg', alt: '4', color: '#AA96D5' },
-    { url: 'passions/piece5.jpg', alt: '5', color: '#F0A77B' },
-    { url: 'passions/piece6.jpg', alt: '6', color: '#F0DE82' },
+    { url: 'https://i.imgur.com/EQ3FC1F.jpeg', alt: '1', color: '#D52F36' },
+    { url: 'https://i.imgur.com/RaRp8Nw.jpeg', alt: '2', color: '#9CBDE0' },
+    { url: 'https://i.imgur.com/qRfys11.jpeg', alt: '3', color: '#BBC99A' },
+    { url: 'https://i.imgur.com/zRZ4PZG.jpeg', alt: '4', color: '#AA96D5' },
+    { url: 'https://i.imgur.com/ym7JkcH.jpeg', alt: '5', color: '#F0A77B' },
+    { url: 'https://i.imgur.com/uelQggh.jpeg', alt: '6', color: '#F0DE82' },
   ];
 
   function handleDragEnd(event: any) {

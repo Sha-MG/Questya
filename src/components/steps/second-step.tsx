@@ -81,7 +81,7 @@ export default function SecondStep({ next, previous }: SecondStepProps) {
       <Center>
         <Image
           w='400px'
-          src='map.jpg'
+          src='https://i.imgur.com/KvlpJxn.jpg'
           alt="carte de l'aventure"
           transition='all 0.3s'
           _hover={{ cursor: 'pointer', boxShadow: '0 0 10px 5px #D5C6BA' }}
@@ -95,7 +95,10 @@ export default function SecondStep({ next, previous }: SecondStepProps) {
           <ModalCloseButton />
           <ModalBody>
             <AspectRatio ratio={1 / 1} minW='50vw'>
-              <Image src='map.jpg' alt="carte de l'aventure" />
+              <Image
+                src='https://i.imgur.com/KvlpJxn.jpg'
+                alt="carte de l'aventure"
+              />
             </AspectRatio>
           </ModalBody>
         </ModalContent>

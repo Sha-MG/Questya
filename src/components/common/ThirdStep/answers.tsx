@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Box, Center, Stack } from '@chakra-ui/react';
+import { Box, Center, Stack, Text } from '@chakra-ui/react';
 
 import CustomButton from '../custom_button';
 import CustomInput from '../custom_input';
@@ -17,9 +17,12 @@ export default function Answers({ next }: AnswersProps) {
       <Box>
         Vous revoilà devant la chapelle, prêt à déchiffrer l&apos;énigme qui
         vous permettra d&apos;en franchir le seuil. Vous avez récolté trois
-        mots-clés, chacun associé à une zone du jardin. Vous vous apprêtez à les
-        saisir dans le clavier électronique, espérant que la porte
-        s&apos;ouvrira enfin pour vous révéler ses secrets.
+        mots-clés, chacun associé à une zone du jardin{' '}
+        <Text as='i' textDecoration='underline'>
+          et à une qualité.
+        </Text>{' '}
+        Vous vous apprêtez à les saisir dans le clavier électronique, espérant
+        que la porte s&apos;ouvrira enfin pour vous révéler ses secrets.
       </Box>
       {validatedAnswers === 3 ? (
         <Stack spacing={8}>

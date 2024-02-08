@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react';
+import { HStack } from '@chakra-ui/react';
 
 interface CustomButtonProps {
   action: () => void;
@@ -11,7 +11,7 @@ export default function CustomButton({
   small,
 }: CustomButtonProps) {
   return (
-    <Box
+    <HStack
       fontFamily={`"diphylleia", cursive`}
       bgColor='#988A88'
       color='#E1DAD9'
@@ -24,6 +24,6 @@ export default function CustomButton({
       {...(small && { fontSize: 'sm' })}
     >
       {text}
-    </Box>
+    </HStack>
   );
 }

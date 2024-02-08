@@ -20,7 +20,7 @@ export default function ThirdStep({ next }: ThirdStepProps) {
       <Box
         w='full'
         my={4}
-        bgImage={'url(chapelle.jpg)'}
+        bgImage='https://i.imgur.com/AnoLw80.jpeg'
         h='350px'
         bgPosition='center'
         bgSize='cover'
@@ -43,7 +43,7 @@ export default function ThirdStep({ next }: ThirdStepProps) {
 
       <HStack spacing={0} my={10}>
         <Path
-          url='fleurs.jpg'
+          url='https://i.imgur.com/FAruwpz.jpeg'
           border={true}
           description={
             <Stack textAlign='justify' py={10} spacing={4}>
@@ -67,7 +67,7 @@ export default function ThirdStep({ next }: ThirdStepProps) {
           }
         />
         <Path
-          url='jungle.jpg'
+          url='https://i.imgur.com/bnyGDE9.jpeg'
           border={true}
           description={
             <Stack textAlign='justify' py={10} spacing={4}>
@@ -90,7 +90,7 @@ export default function ThirdStep({ next }: ThirdStepProps) {
           }
         />
         <Path
-          url='arbre.jpg'
+          url='https://i.imgur.com/dVkMcNm.jpeg'
           border={false}
           description={
             <Stack textAlign='justify' py={10} spacing={4}>

@@ -18,11 +18,13 @@ import {
   Circle,
   Container,
   Image,
+  Stack,
   Step,
   StepIcon,
   StepIndicator,
   Stepper,
   StepStatus,
+  Text,
 } from '@chakra-ui/react';
 
 export default function Home() {
@@ -59,6 +61,22 @@ export default function Home() {
           <Center>
             <Image src='/Questya.png' alt='logo' w='200px' />
           </Center>
+          <Stack
+            display={{ base: 'flex', lg: 'none' }}
+            textAlign='justify'
+            spacing={4}
+          >
+            <Text>
+              Bienvenue sur Questya, une aventure en ligne dont le but ultime
+              est de trouver la candidate idéale pour votre poste !
+            </Text>
+            <Text>
+              Malheureusement, cette expérience n&apos;est pas encore disponible
+              sur mobile. Nous vous invitons à revenir sur un ordinateur afin de
+              vivre cette aventure pleinement.
+            </Text>
+            <Text>A très vite !</Text>
+          </Stack>
           {currentStep > 0 && currentStep < 7 && (
             <Stepper index={currentStep - 1} mb={10} size='sm'>
               {steps.map((step, index) => (
@@ -90,23 +108,25 @@ export default function Home() {
               ))}
             </Stepper>
           )}
-          {currentStep === 0 ? (
-            <Entry next={handleNextStep} />
-          ) : currentStep === 1 ? (
-            <FirstStep next={handleNextStep} previous={handlePreviousStep} />
-          ) : currentStep === 2 ? (
-            <SecondStep next={handleNextStep} previous={handlePreviousStep} />
-          ) : currentStep === 3 ? (
-            <ThirdStep next={handleNextStep} />
-          ) : currentStep === 4 ? (
-            <Step4 next={handleNextStep} />
-          ) : currentStep === 5 ? (
-            <Step5 next={handleNextStep} />
-          ) : currentStep === 6 ? (
-            <Step6 next={handleNextStep} />
-          ) : (
-            <LastStep />
-          )}
+          <Box display={{ base: 'none', lg: 'block' }}>
+            {currentStep === 0 ? (
+              <Entry next={handleNextStep} />
+            ) : currentStep === 1 ? (
+              <FirstStep next={handleNextStep} previous={handlePreviousStep} />
+            ) : currentStep === 2 ? (
+              <SecondStep next={handleNextStep} previous={handlePreviousStep} />
+            ) : currentStep === 3 ? (
+              <ThirdStep next={handleNextStep} />
+            ) : currentStep === 4 ? (
+              <Step4 next={handleNextStep} />
+            ) : currentStep === 5 ? (
+              <Step5 next={handleNextStep} />
+            ) : currentStep === 6 ? (
+              <Step6 next={handleNextStep} />
+            ) : (
+              <LastStep />
+            )}
+          </Box>
         </Container>
       </Center>
     </ChakraProvider>
