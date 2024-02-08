@@ -51,11 +51,13 @@ export default function FirstStep({ next, previous }: FirstStepProps) {
         de promesses.
       </Box>
       <Box>Deux options s&apos;offrent maintenant à vous :</Box>
-      <CustomButton action={next} text='Je suis prêt pour cette aventure.' />
-      <CustomButton
-        action={previous}
-        text="J'ai oublié quelque chose avant de partir. Les grandes découvertes peuvent attendre les petites urgences. Revenez dès que vous serez prêt !"
-      />
+      <Stack spacing={4} alignItems='center'>
+        <CustomButton action={next} text='Je suis prêt pour cette aventure.' />
+        <CustomButton
+          action={previous}
+          text="J'ai oublié quelque chose avant de partir. Les grandes découvertes peuvent attendre les petites urgences. Revenez dès que vous serez prêt !"
+        />
+      </Stack>
     </Stack>
   );
 }
