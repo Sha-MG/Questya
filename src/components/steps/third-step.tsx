@@ -58,10 +58,7 @@ export default function ThirdStep({ next }: ThirdStepProps) {
                 fontWeight='semibold'
                 fontFamily='diphylleia'
               >
-                &quot;Je suis l&apos;éclat des couleurs, le murmure des pétales
-                dans le vent, l&apos;arc-en-ciel de l&apos;imagination, le
-                pinceau du génie. Je m&apos;épanouis dans la diversité, trouvant
-                inspiration dans chaque nuance.&quot;
+                &quot;Je suis le souffle qui donne vie aux idées.&quot;
               </Box>
             </Stack>
           }
