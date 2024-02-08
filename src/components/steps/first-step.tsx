@@ -50,7 +50,7 @@ export default function FirstStep({ next, previous }: FirstStepProps) {
         frisson d&apos;excitation, vous vous engagez dans cette aventure pleine
         de promesses.
       </Box>
-      <Box>Deux options s&apos;offrent maintenant à vous :</Box>
+      <Box my={6}>Deux options s&apos;offrent maintenant à vous :</Box>
       <Stack spacing={4} alignItems='center'>
         <CustomButton action={next} text='Je suis prêt pour cette aventure.' />
         <CustomButton

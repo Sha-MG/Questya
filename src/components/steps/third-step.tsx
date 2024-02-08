@@ -80,8 +80,8 @@ export default function ThirdStep({ next }: ThirdStepProps) {
                 fontWeight='semibold'
                 fontFamily='diphylleia'
               >
-                &quot;Je suis cachée dans les profondeurs de l&apos;inconnu,
-                attisant une flamme...&quot;
+                &quot;Je suis l&apos;insatiable soif de savoir, l&apos;éclaireur
+                des chemins inexplorés et le moteur de la découverte.&quot;
               </Box>
             </Stack>
           }

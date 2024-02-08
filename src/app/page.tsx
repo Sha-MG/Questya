@@ -110,7 +110,10 @@ export default function Home() {
           )}
           <Box display={{ base: 'none', lg: 'block' }}>
             {currentStep === 0 ? (
-              <Entry next={handleNextStep} />
+              <Entry
+                next={handleNextStep}
+                handleEnd={() => setCurrentStep(7)}
+              />
             ) : currentStep === 1 ? (
               <FirstStep next={handleNextStep} previous={handlePreviousStep} />
             ) : currentStep === 2 ? (

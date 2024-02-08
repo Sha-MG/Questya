@@ -1,7 +1,13 @@
+import { useEffect } from 'react';
+
 import { EmailIcon, LinkIcon, PhoneIcon } from '@chakra-ui/icons';
 import { Box, Center, HStack, Link, Stack, Text } from '@chakra-ui/react';
 
 export default function LastStep() {
+  useEffect(() => {
+    localStorage.setItem('completed', 'true');
+  }, []);
+
   return (
     <Stack spacing={2} textAlign='justify'>
       <Text fontWeight='bold'>Félicitations, vous y êtes.</Text>

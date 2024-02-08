@@ -1,12 +1,15 @@
-import { Box, Center, Stack } from '@chakra-ui/react';
+import { Box, Stack } from '@chakra-ui/react';
 
 import CustomButton from '../common/custom_button';
 
 interface EntryProps {
   next: () => void;
+  handleEnd: () => void;
 }
 
-export default function Entry({ next }: EntryProps) {
+export default function Entry({ next, handleEnd }: EntryProps) {
+  const isCompleted = localStorage.getItem('completed');
+
   return (
     <Stack textAlign='justify' spacing={4}>
       <Box>
@@ -24,9 +27,15 @@ export default function Entry({ next }: EntryProps) {
         Préparez-vous à plonger dans un monde où chaque détail a son importance.
         Êtes-vous prêt à relever le défi ?
       </Box>
-      <Center my={10}>
+      <Stack alignItems='center' my={10}>
         <CustomButton action={next} text="C'est parti !" />
-      </Center>
+        {isCompleted && (
+          <CustomButton
+            action={handleEnd}
+            text='Je connais déjà cette histoire, amenez moi sur la Montagne.'
+          />
+        )}
+      </Stack>
       <Box as='i' fontSize='sm'>
         À savoir : Chaque fois que l&apos;on vous demandera la solution
         d&apos;une énigme, au bout de 2 essais vous aurez un indice, au bout de
