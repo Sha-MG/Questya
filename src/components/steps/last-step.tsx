@@ -43,9 +43,9 @@ export default function LastStep() {
         <Text fontSize='sm' as='i'>
           Un grand merci d&apos;avoir parcouru cette aventure jusqu&apos;au
           bout. J&apos;espère que vous avez autant apprécié ce voyage que moi.
-          Ce site a été créé dans le cadre d&apos;une offre d&apos;emploi chez
-          The Game. Pour toute question ou remarque, je reste à votre
-          disposition.
+          Ce site et ses énigmes ont étés créés en deux jours dans le cadre
+          d&apos;une offre d&apos;emploi. Pour toute question ou remarque, je
+          reste à votre disposition.
         </Text>
       </Box>
       <Center>
